@@ -30,10 +30,18 @@ class Teste:
         print(g.descricao())
         print(f"CPF: {g.get_cpf()}")
 
+    def criar_e_testar_funcionario2(self):
+        f = Funcionario("Luís", 3000.00)
+        f.set_cpf("097.536.009-89")
+        f.set_salario(3500.00)
+        print(f.descricao())
+        print(f"CPF: {f.get_cpf()}")
+
 
 # Instanciar a classe de teste e realizar os testes
 if __name__ == "__main__":
     teste = Teste()
     teste.criar_e_testar_funcionario()
     teste.criar_e_testar_engenheiro()
+    teste.criar_e_testar_funcionario2()
     teste.criar_e_testar_gerente()
