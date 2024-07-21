@@ -1,4 +1,4 @@
-from Funcionario import Funcionario, Engenheiro, Gerente
+from Funcionario import Funcionario, Engenheiro, Gerente, Funcionario2
 
 
 # Classe de teste
@@ -8,12 +8,18 @@ class Teste:
 
 
     def criar_e_testar_funcionario(self):
-        f = Funcionario("Alana", 3000.00)
+        f = Funcionario("Thauane", 3000.00)
         f.set_cpf("131.453.749-09")
         f.set_salario(3500.00)
         print(f.descricao())
         print(f"CPF: {f.get_cpf()}")
 
+     def criar_e_testar_funcionario2(self):
+        f = Funcionario("Luís", 3000.00)
+        f.set_cpf("097.536.009-89")
+        f.set_salario(3500.00)
+        print(f.descricao())
+        print(f"CPF: {f.get_cpf()}")
 
     def criar_e_testar_engenheiro(self):
         e = Engenheiro("Evlyn", 5000.00, "Software")
@@ -29,13 +35,6 @@ class Teste:
         g.set_cpf("111.222.333-44")
         print(g.descricao())
         print(f"CPF: {g.get_cpf()}")
-
-    def criar_e_testar_funcionario2(self):
-        f = Funcionario("Luís", 3000.00)
-        f.set_cpf("097.536.009-89")
-        f.set_salario(3500.00)
-        print(f.descricao())
-        print(f"CPF: {f.get_cpf()}")
 
 
 # Instanciar a classe de teste e realizar os testes
