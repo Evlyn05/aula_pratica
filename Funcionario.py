@@ -29,6 +29,34 @@ class Funcionario:
         return f"Funcionario: {self.nome}, Salário: R${self._salario:.2f}"
 
 
+class Funcionario2:
+    def __init__(self, nome, salario):
+        self.nome = nome  # Atributo público
+        self._salario = salario  # Atributo protegido
+        self.__cpf = None  # Atributo privado
+
+
+    # Método para consultar o CPF (atributo privado)
+    def get_cpf(self):
+        return self.__cpf
+
+
+    # Método para modificar o CPF (atributo privado)
+    def set_cpf(self, cpf):
+        self.__cpf = cpf
+
+
+    # Método para consultar o salário (atributo protegido)
+    def get_salario(self):
+        return self._salario
+
+    # Método para modificar o salário (atributo protegido)
+    def set_salario(self, salario):
+        self._salario = salario
+
+
+    def descricao(self):
+        return f"Funcionario: {self.nome}, Salário: R${self._salario:.2f}"
 
 
 # Classe derivada Engenheiro
