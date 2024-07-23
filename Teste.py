@@ -14,7 +14,7 @@ class Teste:
         print(f.descricao())
         print(f"CPF: {f.get_cpf()}")
 
-     def criar_e_testar_funcionario2(self):
+    def criar_e_testar_funcionario2(self):
         f = Funcionario("Luís", 3000.00)
         f.set_cpf("097.536.009-89")
         f.set_salario(3500.00)
